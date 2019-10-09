@@ -4,27 +4,46 @@
     <title>
         Reactive Calculator
     </title>
-    <style>
-        #simpleBox {
-            position: absolute;
-            width: 100px;
-            height: 100px;
-            border: 1px solid rgb(26, 26, 163);
-            border-radius: 25px;
-            background-color: rgb(114, 114, 243);
-            color: white;
-            padding: 40px;
-            text-align: center;
-            font-size: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 
 <body>
-    <div id="simpleBox">
+    <!-- <div id="simpleBox">
         This is box with nice edges
+    </div> -->
+    <div class="result">
+        <h2 id="input1">0</h2>
+        <h2 id="op"></h2>
+        <h2 id="input2"></h2>
+    </div>
+    <div>
+        <button class="calcButton">7</button>
+        <button class="calcButton">8</button>
+        <button class="calcButton">9</button>
+        <button id="clear" class="clear">C</button>
+    </div>
+    <div>
+        <button class="calcButton">4</button>
+        <button class="calcButton">5</button>
+        <button class="calcButton">6</button>
+    </div>
+    <div>
+        <button class="calcButton">1</button>
+        <button class="calcButton">2</button>
+        <button class="calcButton">3</button>
+    </div>
+    <div>
+        <button class="calcButton">0</button>
+        <button class="operandButton">+</button>
+        <button class="operandButton">-</button>
+    </div>
+    <div>
+        <button class="operandButton">:</button>
+        <button class="operandButton">x</button>
+        <button class="operandButton">=</button>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.5.3/rxjs.umd.min.js"></script>
+    <!-- <script src="src/js/dragdrop-rx.js"></script> -->
     <script src="src/js/calculator-rx.js"></script>
 </body>
 
